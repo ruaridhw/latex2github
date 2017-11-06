@@ -27,6 +27,10 @@ tex2png <- function(math, figure_name, file_name){
 }
 
 latex2github <- function(rmdfile) {
+  current_dir <- getwd()
+  setwd(dirname(rmdfile))
+  on.exit(setwd(current_dir))
+  rmdfile <- basename(rmdfile)
   # Read Rmd file and match all occurrences of $$...$$
   rmd  <- paste0(readLines(rmdfile), collapse = "\n")
   matches  <- stringr::str_match_all(string = rmd, pattern = "(?s)\\$\\$(.*?)\\$\\$")[[1]]
