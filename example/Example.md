@@ -36,6 +36,6 @@ Including Maths
 
 Here is an example of embedding maths in GitHub Documents:
 
-![](example_files/figure-markdown_github-ascii_identifiers//math1.png)
+![](Example_files/figure-markdown_github-ascii_identifiers//math1.png)
 
-![](example_files/figure-markdown_github-ascii_identifiers//math1.png)
+![](Example_files/figure-markdown_github-ascii_identifiers//math1.png)

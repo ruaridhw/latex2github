@@ -15,7 +15,7 @@ tex2png <- function(math, figure_name, file_name){
   
   # Use figure location from RMarkdown package
   ### Artifical setup
-  files_dir <- paste0(tolower(file_name), "_files")
+  files_dir <- paste0(file_name, "_files")
   base_pandoc_to <- "markdown_github-ascii_identifiers"
   ### From render.R#L353
   figures_dir <- paste(files_dir, "/figure-", base_pandoc_to, "/", sep = "")
